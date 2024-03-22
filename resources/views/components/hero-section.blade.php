@@ -9,7 +9,7 @@
             turning anticipation into excitement. Engage your community, offer exclusives, and make waiting worthwhile.
             Let's transform anticipation into opportunity. Get started now.
         </p>
-        <button class="mb-1.5 mt-10 mx-auto flex flex-row items-center  py-3 px-6 text-lg h-16 px-4 py-2.5 text-sm leading-[unset] text-white cursor-pointer font-medium bg-slate-950 rounded-lg transition duration-200 ease-in-out hover:shadow-[0_0_1px_3px_rgba(11,61,121,.16)]">
+        <button class="mb-1.5 mt-10 mx-auto flex flex-row items-center  py-3 px-6 text-lg h-16 px-4 py-2.5 leading-[unset] text-white cursor-pointer font-medium bg-slate-950 rounded-lg transition duration-200 ease-in-out hover:shadow-[0_0_1px_3px_rgba(11,61,121,.16)]">
             <div class=" inline-block w-6 h-6 right-0">
                 <svg width="100%" height="100%" viewBox="0 0 24 24" fill="inherit" xmlns="http://www.w3.org/2000/svg"
                      class="fill-current">

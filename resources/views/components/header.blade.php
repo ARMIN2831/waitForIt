@@ -17,7 +17,7 @@
                     <svg width="100%" height="100%" viewBox="0 0 24 24" fill="inherit" xmlns="http://www.w3.org/2000/svg" class="fill-current"> <path d="M15.88 10.29L12 14.17L8.11998 10.29C7.72998 9.9 7.09998 9.9 6.70998 10.29C6.31998 10.68 6.31998 11.31 6.70998 11.7L11.3 16.29C11.69 16.68 12.32 16.68 12.71 16.29L17.3 11.7C17.69 11.31 17.69 10.68 17.3 10.29C16.91 9.91 16.27 9.9 15.88 10.29V10.29Z"></path> </svg>
                 </div>
                 <div class="absolute hidden pt-11 group-hover:block -translate-x-1/3">
-                    <div class="w-[550px] p-3 flex flex-row gap-3 border border-black-200 bg-white-900 shadow-xl rounded-2xl">
+                    <div class="w-[550px] p-3 flex flex-row gap-3 border border-black-200 bg-white-900 shadow-xl rounded-2xl bg-white">
                         <div class="w-2/5 px-4 flex flex-col gap-1 justify-end rounded-xl" style="background-image: radial-gradient(circle farthest-corner at 125% 100%, #fff 19%, hsla(0, 0%, 100%, 0) 41%), linear-gradient(38deg, hsla(0, 0%, 100%, 0) 78%, hsla(0, 0%, 100%, .69)), linear-gradient(45deg, #fff 10%, hsla(0, 0%, 100%, 0) 22%), linear-gradient(0deg, #fff, hsla(0, 0%, 100%, 0) 91%), radial-gradient(circle farthest-corner at 0 -50%, hsla(0, 0%, 100%, 0) 15%, rgba(67, 254, 254, .4) 38%, hsla(0, 0%, 100%, 0) 65%), repeating-linear-gradient(214deg, hsla(0, 0%, 100%, 0), rgba(210, 255, 247, .3) 25%, hsla(0, 0%, 100%, 0) 71%), repeating-linear-gradient(212deg, hsla(0, 0%, 100%, 0) 51%, rgba(17, 75, 233, .3) 64%, hsla(0, 0%, 100%, 0) 80%);}">
                             <span class="text-black-900 font-semibold text-lg">All Features</span>
                             <p class="mb-12">
@@ -64,5 +64,9 @@
             <div class="px-4 py-2.5 text-sm leading-[unset] text-white cursor-pointer font-medium bg-violet-700 rounded-lg transition duration-200 ease-in-out hover:shadow-[0_0_1px_3px_rgba(223,199,249,1)]">Sign up for free</div>
         </div>
         {{--end right--}}
+
+        <div class="">
+
+        </div>
     </nav>
 </header>
