@@ -1,4 +1,4 @@
-<section class="bg-purple-200 pt-32">
+<section class="bg-purple-200 py-32">
 
     <div class="w-full max-w-[1200px] mx-auto flex flex-row gap-64">
         <p class="text-purple-800 text-5xl font-semibold w-full max-w-[472px]">Stop spending hours building a waitlist</p>
@@ -49,5 +49,19 @@
         </div>
     </div>
     {{--end slider--}}
+    <div class="w-full max-w-[1200px] mx-auto grid grid-cols-3 gap-12 mt-16">
+        <div class="flex flex-col gap-3 border-t border-slate-950 pt-8">
+            <h2 class="text-xl font-bold">Comment threads</h2>
+            <p>Have discussions with your users to clarify and understand their needs.</p>
+        </div>
+        <div class="flex flex-col gap-3 border-t border-slate-950 pt-8">
+            <h2 class="text-xl font-bold">Comment threads</h2>
+            <p>Have discussions with your users to clarify and understand their needs.</p>
+        </div>
+        <div class="flex flex-col gap-3 border-t border-slate-950 pt-8">
+            <h2 class="text-xl font-bold">Comment threads</h2>
+            <p>Have discussions with your users to clarify and understand their needs.</p>
+        </div>
+    </div>
 
 </section>
