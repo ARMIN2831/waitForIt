@@ -99,19 +99,7 @@
                     <x-dashboard.color-picker>Error Color</x-dashboard.color-picker>
                     <x-dashboard.range min="0" max="8" value="1" key="px">Border Width</x-dashboard.range>
                     <x-dashboard.range min="0" max="25" value="5" key="px">Border Radius</x-dashboard.range>
-                    <x-dashboard.text>Border Radius</x-dashboard.text>
-
-                    <div class="w-full p-2 flex flex-row justify-between items-center gap-2">
-                        <p class="font-semibold text-sm">
-                            Your input
-                        </p>
-                        <select class="w-1/2 h-8 bg-gray-300 border border-gray-400 rounded-sm cursor-pointer">
-                            <option selected="selected">Not Selected</option>
-                            <option>Text</option>
-                            <option>Radio</option>
-                            <option>TextField</option>
-                        </select>
-                    </div>
+                    <x-dashboard.new-input></x-dashboard.new-input>
                 </div>
 
                 <div x-show="activeTab === 'button'">
@@ -122,6 +110,7 @@
                     <x-dashboard.range min="0" max="25" value="5" key="px">Border Radius</x-dashboard.range>
                     <x-dashboard.range min="10" max="20" value="15" key="px">Font Size</x-dashboard.range>
                     <x-dashboard.select>Font Weight</x-dashboard.select>
+                    <x-dashboard.text>Text</x-dashboard.text>
                 </div>
                 {{-- End options --}}
             </div>
