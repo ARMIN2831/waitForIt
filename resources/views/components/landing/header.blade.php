@@ -1,12 +1,12 @@
 <header class="fixed bg-white w-full top-0 z-50 shadow-md">
-    <nav class="flex justify-between mx-auto max-w-[1200px] relative w-full z-10 items-center flex-wrap gap-4 h-16 px-6 pt-4 pb-2">
+    <nav class="flex flex-row justify-between mx-auto max-w-[1200px] relative w-full z-10 items-center gap-4 h-16 px-6 pt-4 pb-2">
         {{--left--}}
         <div class="flex gap-2 items-start">
             <div class="h-8 flex items-center">
                 <img width="40" height="40" src="{{asset('storage/photos/waitforitlogo.webp')}}">
                 <p class="font-bold text-2xl ml-1.5 mb-0.5">waitForIt</p>
             </div>
-            <a class="tracking-widest inline-flex items-center px-3 py-2 bg-purple-100 rounded-lg font-bold text-xs font-bold text-purple-600 uppercase hover:bg-purple-200 transition duration-300 ease-in-out transform">Blog</a>
+            {{--<a class="tracking-widest inline-flex items-center px-3 py-2 bg-purple-100 rounded-lg font-bold text-xs font-bold text-purple-600 uppercase hover:bg-purple-200 transition duration-300 ease-in-out transform">Blog</a>--}}
         </div>
         {{--end left--}}
 
@@ -60,13 +60,9 @@
             <div class="py-2.5 text-sm text-slate-500 cursor-pointer font-medium hover:text-violet-700">
                 <div itemprop="name" class="w-5 h-5 scale-90 rotate-0 hover:scale-110 hover:rotate-90 duration-500 fill-slate-400 hover:fill-primary-500"> <div class="icon-5"> <svg width="100%" height="100%" viewBox="0 0 24 24" fill="inherit" xmlns="http://www.w3.org/2000/svg" class="fill-current"> <path fill-rule="evenodd" clip-rule="evenodd" d="M11.8673 4H12.1327C12.8071 8.02 15.98 11.1928 20 11.8673V12.1327C15.98 12.8072 12.8071 15.98 12.1327 20H11.8673C11.1929 15.98 8.02001 12.8072 4 12.1327V11.8673C8.02001 11.1928 11.1929 8.02 11.8673 4Z"></path> </svg> <span class="sr-only">Little Star</span> </div> </div>
             </div>
-            <div class="px-1 py-2.5 text-sm text-slate-500 cursor-pointer font-medium hover:text-violet-700">Login</div>
+            <a href="{{ route('login') }}" class="px-1 py-2.5 text-sm text-slate-500 cursor-pointer font-medium hover:text-violet-700">Login</a>
             <div class="px-4 py-2.5 text-sm leading-[unset] text-white cursor-pointer font-medium bg-violet-700 rounded-lg transition duration-200 ease-in-out hover:shadow-[0_0_1px_3px_rgba(223,199,249,1)]">Sign up for free</div>
         </div>
         {{--end right--}}
-
-        <div class="">
-
-        </div>
     </nav>
 </header>

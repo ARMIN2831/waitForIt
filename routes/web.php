@@ -12,8 +12,14 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
+Route::view('/test', 'welcome');
 Route::get('/',\App\Livewire\Landing::class);
-Route::get('/test', function () {
-    return view('welcome');
-});
+Route::get('dashboard', \App\Livewire\Dashboard::class)
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
+
+Route::view('profile', 'profile')
+    ->middleware(['auth'])
+    ->name('profile');
+
+require __DIR__.'/auth.php';
