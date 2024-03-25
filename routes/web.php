@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 Route::view('/test', 'welcome');
 Route::get('/',\App\Livewire\Landing::class);
-Route::get('dashboard', \App\Livewire\Dashboard::class)
-    ->middleware(['auth', 'verified'])
-    ->name('dashboard');
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/dashboard',\App\Livewire\Dashboard::class)->name('dashboard');
+    Route::get('/dashboard/edit/{id}',\App\Livewire\Dashboard::class)->name('dashboard.edit');
+});
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])

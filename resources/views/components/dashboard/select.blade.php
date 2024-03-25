@@ -3,9 +3,9 @@
         {{$slot}}
     </p>
     <select class="w-1/2 h-8 bg-gray-300 border border-gray-400 rounded-sm">
-        <option>Thin</option>
-        <option>Normal</option>
-        <option>Bold</option>
+        <option {{ $attributes['value'] == 200 ? 'selected="selected"' : ''  }}>Thin</option>
+        <option {{ $attributes['value'] == 400 ? 'selected="selected"' : ''  }}>Normal</option>
+        <option {{ $attributes['value'] == 700 ? 'selected="selected"' : ''  }}>Bold</option>
     </select>
 </div>
 
