@@ -17,7 +17,11 @@ Route::get('/',\App\Livewire\Landing::class);
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard',\App\Livewire\Dashboard::class)->name('dashboard');
     Route::get('/dashboard/edit/{id}',\App\Livewire\Dashboard::class)->name('dashboard.edit');
+    Route::get('/dashboard/delete/{id}',[\App\Livewire\Dashboard::class,'deleteProject'])->name('dashboard.delete');
+    Route::get('/project/{id}',\App\Livewire\Project::class)->name('project.detail');
 });
+
+Route::get('/signup/{id}',\App\Livewire\Signup::class)->name('signup');
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
