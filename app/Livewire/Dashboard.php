@@ -13,6 +13,7 @@ class Dashboard extends Component
     public $projects;
     public $p;
     public $photo;
+    public $template = 'first';
 
     public function optionsHandle($section ,$index, $value)
     {
@@ -39,9 +40,11 @@ class Dashboard extends Component
     {
         $this->projects = Project::select('id','title')->where('user_id',(auth()->user())->id)->get();
         if ($id != 0) $this->p = Project::find($id);
+        $user = auth()->user();
+        if ($user) $this->template = ($user->template()->get())[0]->title;
     }
     public function render()
     {
-        return view('livewire.dashboard');
+        return view('templates.'.$this->template.'.livewire.dashboard');
     }
 }

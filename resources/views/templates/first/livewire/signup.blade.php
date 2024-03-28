@@ -5,6 +5,6 @@
             $input = unserialize($p->input);
             $button = unserialize($p->button);
         @endphp
-        <x-dashboard.user-form :sign="1" :general="$general" :input="$input" :button="$button"></x-dashboard.user-form>
+        @include('templates.'. $template .'.dashboard.user-form', ['general' => $general,'input' => $input,'button' => $button,'sign' => 1])
     @endif
 </div>

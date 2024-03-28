@@ -1,10 +1,10 @@
 <div>
-    <x-landing.header/>
+    @include('templates.'. $template .'.landing.header')
 
     <div class="flex flex-row w-full h-screen pt-16">
         {{--project list--}}
         <div class="bg-gray-200 w-1/5 h-full z-10">
-            <x-dashboard.project-list :projects="$projects"></x-dashboard.project-list>
+            @include('templates.'. $template .'.dashboard.project-list', ['projects' => $projects])
         </div>
         {{--end project list--}}
 

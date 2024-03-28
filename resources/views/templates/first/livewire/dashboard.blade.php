@@ -1,10 +1,10 @@
 <div>
-    <x-landing.header/>
+    @include('templates.'. $template .'.landing.header')
 
     <div class="flex flex-row w-full h-screen pt-16">
         {{--project list--}}
         <div class="bg-gray-200 w-1/5 h-full z-10">
-            <x-dashboard.project-list :projects="$projects"></x-dashboard.project-list>
+            @include('templates.'. $template .'.dashboard.project-list', ['projects' => $projects])
         </div>
         {{--end project list--}}
 
@@ -19,7 +19,7 @@
                         $input = unserialize($p->input);
                         $button = unserialize($p->button);
                     @endphp
-                    <x-dashboard.user-form :sign="0" :general="$general" :input="$input" :button="$button"></x-dashboard.user-form>
+                    @include('templates.'. $template .'.dashboard.user-form', ['general' => $general,'input' => $input,'button' => $button,'sign' => 0])
                 @endif
             </div>
             {{--end user form--}}
@@ -31,7 +31,7 @@
         <div class="bg-gray-200 w-1/5 h-full z-10">
 
             @if(isset($p))
-                <x-dashboard.tool-bar :general="$general" :input="$input" :button="$button"></x-dashboard.tool-bar>
+                @include('templates.'. $template .'.dashboard.tool-bar', ['general' => $general,'input' => $input,'button' => $button])
             @endif
         </div>
         {{--end toolbar--}}

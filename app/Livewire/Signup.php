@@ -13,6 +13,7 @@ class Signup extends Component
     public $email;
     public $name;
     public $new = '';
+    public $template = 'first';
 
     public function signup()
     {
@@ -45,11 +46,12 @@ class Signup extends Component
                 'date' => $today,
             ]);
         }
-
+        $user = auth()->user();
+        if ($user) $this->template = ($user->template()->get())[0]->title;
 
     }
     public function render()
     {
-        return view('livewire.signup');
+        return view('templates.'.$this->template.'.livewire.signup');
     }
 }
