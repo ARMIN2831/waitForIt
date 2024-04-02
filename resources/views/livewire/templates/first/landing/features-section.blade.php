@@ -1,6 +1,6 @@
-<section class="pt-16 z-10 bg-white">
+<section class="pt-16 z-10 bg-white  max-md:px-6">
     <div class="w-1/2 mx-auto text-center">
-        <h2 class="text-5xl font-semibold font-arial">See all features</h2>
+        <h2 class="max-md:text-2xl md:text-5xl font-semibold font-arial">See all features</h2>
         <p class="text-lg pt-4">All the features of product feedback tool you need to easily centralize product feedback
             from your customers and use that feedback to build better products.</p>
     </div>

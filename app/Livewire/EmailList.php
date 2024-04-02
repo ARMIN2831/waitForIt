@@ -3,10 +3,11 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-
-class Landing extends Component
+class EmailList extends Component
 {
+    public $p;
     public $template = 'first';
+
     public function mount()
     {
         $user = auth()->user();
@@ -14,6 +15,6 @@ class Landing extends Component
     }
     public function render()
     {
-        return view('livewire.templates.'.$this->template.'.livewire.landing');
+        return view('livewire.email-list');
     }
 }

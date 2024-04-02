@@ -41,10 +41,10 @@ class Dashboard extends Component
         $this->projects = Project::select('id','title')->where('user_id',(auth()->user())->id)->get();
         if ($id != 0) $this->p = Project::find($id);
         $user = auth()->user();
-        if ($user) $this->template = ($user->template()->get())[0]->title;
+        if ($user and $user->template) $this->template = ($user->template()->get())[0]->title;
     }
     public function render()
     {
-        return view('templates.'.$this->template.'.livewire.dashboard');
+        return view('livewire.templates.'.$this->template.'.livewire.dashboard');
     }
 }

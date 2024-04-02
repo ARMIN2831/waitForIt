@@ -1,7 +1,7 @@
-<section class="bg-purple-200 py-32">
+<section class="bg-purple-200 py-32 max-md:px-6">
 
-    <div class="w-full max-w-[1200px] mx-auto flex flex-row gap-64">
-        <p class="text-purple-800 text-5xl font-semibold w-full max-w-[472px]">Stop spending hours building a waitlist</p>
+    <div class="w-full max-w-[1200px] mx-auto flex max-md:flex-col md:flex-row max-md:gap-12 md:gap-64">
+        <p class="text-purple-800 max-md:text-2xl md:text-5xl font-semibold w-full max-w-[472px]">Stop spending hours building a waitlist</p>
         <div class="flex flex-col items-start">
             <p class=" w-full max-w-[472px]">Experience the ultimate waitlist solution with Waitforit! Our platform offers seamless waitlist embedding and email verification in one easy-to-use package. Simplify your workflow and keep your audience engaged with Waitforit's intuitive features. Start streamlining your waitlist management today!</p>
             <button class="mt-10 flex flex-row items-center px-3 py-6 text-lg h-12 px-4 py-2.5 leading-[unset] text-white cursor-pointer font-medium bg-slate-950 rounded-lg transition duration-200 ease-in-out hover:shadow-[0_0_1px_3px_rgba(11,61,121,.16)]">

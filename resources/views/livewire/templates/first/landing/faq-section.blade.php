@@ -1,7 +1,7 @@
-<section class="pt-16 z-10 bg-white">
+<section class="pt-16 z-10 bg-white max-md:px-6">
     <div class="w-full max-w-[1200px] mx-auto mb-16">
         <div class="text-start">
-            <h2 class="text-5xl font-semibold font-arial">Everything you need to know</h2>
+            <h2 class="max-md:text-2xl md:text-5xl font-semibold font-arial">Everything you need to know</h2>
             <p class="text-lg pt-4">If you have anything else you want to ask, reach out to us.</p>
         </div>
         <div class="grid grid-cols-2 gap-8 mt-16 relative">
@@ -43,7 +43,7 @@
                 <img class="w-full h-full object-cover rounded-[40px]" width="1440" height="527" src="{{asset('storage/photos/bg3.jpg')}}" alt="Background Image">
             </div>
             <div class="relative z-10 text-center w-full max-w-[42rem] mx-auto">
-                <h2 class="text-5xl font-semibold font-arial text-white text-slate-200">Stop wasting time & start collecting user feedback</h2>
+                <h2 class="max-md:text-2xl md:text-5xl font-semibold font-arial text-white text-slate-200">Stop wasting time & start collecting user feedback</h2>
                 <p class="text-lg text-white pt-4 text-slate-200">Keep track of feature requests and understand which feedback carry the most impact and should be prioritized.</p>
 
                 <button class="mb-1.5 mt-10 mx-auto flex flex-row items-center  py-3 px-6 text-lg h-16 px-4 py-2.5 leading-[unset] text-black cursor-pointer font-medium bg-white rounded-lg transition duration-200 ease-in-out hover:shadow-[0_0_1px_3px_#9a8ca9]">

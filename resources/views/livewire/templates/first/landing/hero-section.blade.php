@@ -1,6 +1,6 @@
 <section class="pt-40 z-10 bg-white">
     <div class="w-1/2 mx-auto text-center">
-        <h3 class="text-5xl font-semibold font-arial">
+        <h3 class="max-md:text-2xl md:text-5xl font-semibold font-arial">
             Simplify and Enhance Your Waitlist Management
             with Our Seamless Solution
         </h3>

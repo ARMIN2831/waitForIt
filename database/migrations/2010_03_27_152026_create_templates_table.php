@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('details', function (Blueprint $table) {
+        Schema::create('templates', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('project_id')->references('id')->on('projects')->onDelete('cascade');
-            $table->string('name');
-            $table->string('new')->nullable();
-            $table->string('email');
+            $table->string('title')->unique();
             $table->timestamps();
         });
     }
@@ -26,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('details');
+        Schema::dropIfExists('templates');
     }
 };

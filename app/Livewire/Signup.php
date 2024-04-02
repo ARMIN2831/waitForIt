@@ -19,7 +19,7 @@ class Signup extends Component
     {
         $arr = unserialize($this->p->input)['required'];
         $this->validate([
-            'email' => 'required | email | unique:details,email',
+            'email' => 'required | email | unique:details,email,NULL,id,project_id,' . $this->p->id,
             'name' => 'required',
             'new' => $arr ? 'required' : 'nullable',
         ]);
@@ -32,7 +32,7 @@ class Signup extends Component
     }
     public function mount($id = 0)
     {
-        $this->p = Project::find($id);
+        $this->p = Project::findOrFail($id);
         $today = Carbon::today();
         $view = $this->p->today;
 
@@ -47,11 +47,11 @@ class Signup extends Component
             ]);
         }
         $user = auth()->user();
-        if ($user) $this->template = ($user->template()->get())[0]->title;
+        if ($user and $user->template) $this->template = ($user->template()->get())[0]->title;
 
     }
     public function render()
     {
-        return view('templates.'.$this->template.'.livewire.signup');
+        return view('livewire.templates.'.$this->template.'.livewire.signup');
     }
 }

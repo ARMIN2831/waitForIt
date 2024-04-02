@@ -1,10 +1,10 @@
 <div>
-    @include('templates.'. $template .'.landing.header')
+    @include('livewire.templates.'. $template .'.landing.header')
 
     <div class="flex flex-row w-full h-screen pt-16">
         {{--project list--}}
         <div class="bg-gray-200 w-1/5 h-full z-10">
-            @include('templates.'. $template .'.dashboard.project-list', ['projects' => $projects])
+            @include('livewire.templates.'. $template .'.dashboard.project-list', ['projects' => $projects])
         </div>
         {{--end project list--}}
 
@@ -19,7 +19,7 @@
                         $input = unserialize($p->input);
                         $button = unserialize($p->button);
                     @endphp
-                    @include('templates.'. $template .'.dashboard.user-form', ['general' => $general,'input' => $input,'button' => $button,'sign' => 0])
+                    @include('livewire.templates.'. $template .'.dashboard.user-form', ['general' => $general,'input' => $input,'button' => $button,'sign' => 0])
                 @endif
             </div>
             {{--end user form--}}
@@ -31,7 +31,7 @@
         <div class="bg-gray-200 w-1/5 h-full z-10">
 
             @if(isset($p))
-                @include('templates.'. $template .'.dashboard.tool-bar', ['general' => $general,'input' => $input,'button' => $button])
+                @include('livewire.templates.'. $template .'.dashboard.tool-bar', ['general' => $general,'input' => $input,'button' => $button])
             @endif
         </div>
         {{--end toolbar--}}

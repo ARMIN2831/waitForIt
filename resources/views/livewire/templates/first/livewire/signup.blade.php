@@ -5,6 +5,6 @@
             $input = unserialize($p->input);
             $button = unserialize($p->button);
         @endphp
-        @include('templates.'. $template .'.dashboard.user-form', ['general' => $general,'input' => $input,'button' => $button,'sign' => 1])
+        @include('livewire.templates.'. $template .'.dashboard.user-form', ['general' => $general,'input' => $input,'button' => $button,'sign' => 1])
     @endif
 </div>

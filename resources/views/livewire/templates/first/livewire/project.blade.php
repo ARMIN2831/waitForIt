@@ -1,10 +1,10 @@
 <div>
-    @include('templates.'. $template .'.landing.header')
+    @include('livewire.templates.'. $template .'.landing.header')
 
     <div class="flex flex-row w-full h-screen pt-16">
         {{--project list--}}
         <div class="bg-gray-200 w-1/5 h-full z-10">
-            @include('templates.'. $template .'.dashboard.project-list', ['projects' => $projects])
+            @include('livewire.templates.'. $template .'.dashboard.project-list', ['projects' => $projects])
         </div>
         {{--end project list--}}
 
@@ -32,16 +32,9 @@
                         <td scope="col" class="px-6 py-3">Created at</td>
                     </tr>
                     </thead>
-                    <tbody>
-                    @foreach($p->detail as $detail)
-                        <tr class="bg-white border-b">
-                            <td class="px-6 py-4">{{ $detail->email }}</td>
-                            <td class="px-6 py-4">{{ $detail->name }}</td>
-                            <td class="px-6 py-4">{{ $detail->new }}</td>
-                            <td class="px-6 py-4">{{ $detail->created_at }}</td>
-                        </tr>
-                    @endforeach
-                    </tbody>
+                    @livewire('email-list', ['p' => $p])
+                    {{--<livewire:email-list lazy :p="$p" />--}}
+                    {{--{!! view('livewire.templates.first.livewire.email-list', ['p' => $p])->render() !!}--}}
                 </table>
             </div>
         </div>
