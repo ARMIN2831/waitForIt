@@ -3,7 +3,7 @@
 
     <div class="flex flex-row w-full h-screen pt-16">
         {{--project list--}}
-        <div class="bg-gray-200 w-1/5 h-full z-10">
+        <div class="bg-gray-800 w-1/5 h-full z-10">
             @include('livewire.templates.'. $template .'.dashboard.project-list', ['projects' => $projects])
         </div>
         {{--end project list--}}
